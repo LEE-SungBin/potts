@@ -1,1 +1,1 @@
-# 3-state potts m,odel in 2 dimensional square lattice
+# 3-state potts model in 2 dimensional square lattice
