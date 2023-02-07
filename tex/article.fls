@@ -1,10 +1,10 @@
-PWD /mnt/d/Research/potts/tex
+PWD /mnt/d/SNU/Research/potts/tex
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /mnt/d/Research/potts/tex/test.tex
-OUTPUT /mnt/d/Research/potts/tex/test.log
+INPUT /mnt/d/SNU/Research/potts/tex/article.tex
+OUTPUT /mnt/d/SNU/Research/potts/tex/article.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-2.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-2.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/revtex/aps4-2.rtx
@@ -67,11 +67,13 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/kotex-utf/lucenc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /mnt/d/Research/potts/tex/test.aux
-INPUT /mnt/d/Research/potts/tex/test.aux
-OUTPUT /mnt/d/Research/potts/tex/test.aux
+INPUT /mnt/d/SNU/Research/potts/tex/article.aux
+INPUT /mnt/d/SNU/Research/potts/tex/article.aux
+OUTPUT /mnt/d/SNU/Research/potts/tex/article.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -80,52 +82,117 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-OUTPUT /mnt/d/Research/potts/tex/testNotes.bib
+OUTPUT /mnt/d/SNU/Research/potts/tex/articleNotes.bib
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc1.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbe.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/uwmj/uwmj67.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/uwmj/uwmj8a.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/uwmj/uwmj5f.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc1.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbe.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+OUTPUT /mnt/d/SNU/Research/potts/tex/article.pdf
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/uhc/uwmj/uwmj67.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj25.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj28.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj21.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj22.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj17.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj16.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj14.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj15.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj24.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj26.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj27.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj23.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj13.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj18.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj11.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj19.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj20.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/uhc/wmj/wmj15.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj23.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj24.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj26.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj27.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj28.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj29.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj30.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj31.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj32.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj33.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj34.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj36.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj37.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj21.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj35.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj25.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj20.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj22.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/uhc/uwmj/uwmj8a.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/wmj/wmj29.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/uhc/wmj/wmj18.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/uhc/umj/umj38.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/uhc/uwmj/uwmj5f.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/uhc/wmj/wmj17.vf
+INPUT /mnt/d/SNU/Research/potts/tex/../fig/Binder Cumulant (3-state 2D Potts).jpg
+INPUT ../fig/Binder Cumulant (3-state 2D Potts).jpg
+INPUT ../fig/Binder Cumulant (3-state 2D Potts).jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
@@ -133,77 +200,52 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-OUTPUT /mnt/d/Research/potts/tex/test.pdf
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm5.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmitt10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
-INPUT /mnt/d/Research/potts/tex/../fig/Energy (3-state 2D Potts).jpg
-INPUT ../fig/Energy (3-state 2D Potts).jpg
-INPUT ../fig/Energy (3-state 2D Potts).jpg
-INPUT /mnt/d/Research/potts/tex/../fig/Alpha, Specific Heat (3-state 2D Potts).jpg
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
+INPUT /mnt/d/SNU/Research/potts/tex/../fig/Alpha, Specific Heat (3-state 2D Potts).jpg
 INPUT ../fig/Alpha, Specific Heat (3-state 2D Potts).jpg
 INPUT ../fig/Alpha, Specific Heat (3-state 2D Potts).jpg
-INPUT /mnt/d/Research/potts/tex/../fig/Beta, Order Parameter (3-state 2D Potts).jpg
+INPUT /mnt/d/SNU/Research/potts/tex/../fig/Beta, Order Parameter (3-state 2D Potts).jpg
 INPUT ../fig/Beta, Order Parameter (3-state 2D Potts).jpg
 INPUT ../fig/Beta, Order Parameter (3-state 2D Potts).jpg
-INPUT /mnt/d/Research/potts/tex/../fig/Delta, Order Parameter (3-state 2D Potts).jpg
+INPUT /mnt/d/SNU/Research/potts/tex/../fig/Gamma, Susceptibility (3-state 2D Potts).jpg
+INPUT ../fig/Gamma, Susceptibility (3-state 2D Potts).jpg
+INPUT ../fig/Gamma, Susceptibility (3-state 2D Potts).jpg
+INPUT /mnt/d/SNU/Research/potts/tex/../fig/Delta, Order Parameter (3-state 2D Potts).jpg
 INPUT ../fig/Delta, Order Parameter (3-state 2D Potts).jpg
 INPUT ../fig/Delta, Order Parameter (3-state 2D Potts).jpg
-INPUT /mnt/d/Research/potts/tex/test.bbl
-INPUT /mnt/d/Research/potts/tex/test.bbl
-INPUT /mnt/d/Research/potts/tex/test.aux
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /mnt/d/SNU/Research/potts/tex/../fig/Finite Size Scaling (3-state 2D Potts).jpg
+INPUT ../fig/Finite Size Scaling (3-state 2D Potts).jpg
+INPUT ../fig/Finite Size Scaling (3-state 2D Potts).jpg
+INPUT /mnt/d/SNU/Research/potts/tex/../fig/Correlation Length (3-state 2D Potts).jpg
+INPUT ../fig/Correlation Length (3-state 2D Potts).jpg
+INPUT ../fig/Correlation Length (3-state 2D Potts).jpg
+INPUT /mnt/d/SNU/Research/potts/tex/../fig/Correlation Function (3-state 2D Critical Potts).jpg
+INPUT ../fig/Correlation Function (3-state 2D Critical Potts).jpg
+INPUT ../fig/Correlation Function (3-state 2D Critical Potts).jpg
+INPUT /mnt/d/SNU/Research/potts/tex/article.bbl
+INPUT /mnt/d/SNU/Research/potts/tex/article.bbl
+INPUT /mnt/d/SNU/Research/potts/tex/article.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/uhc/umj/umj24.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/uhc/umj/umj26.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/uhc/umj/umj34.pfb

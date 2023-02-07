@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.23)  23 DEC 2022 23:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.12.23)  7 FEB 2023 21:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/mnt/d/Research/potts/tex/test.tex
-(/mnt/d/Research/potts/tex/test.tex
+**/mnt/d/SNU/Research/potts/tex/article.tex
+(/mnt/d/SNU/Research/potts/tex/article.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-2.cls
 Document Class: revtex4-2 2019/01/18/14:29:48 4.2c (https://journals.aps.org/revtex/ for documentation)
@@ -261,38 +261,41 @@ File: lucenc.dfu 2007/09/05 UTF-8 support for dhucs
 \josatoks=\toks26
  (/usr/share/texlive/texmf-dist/tex/latex/cjk-ko/kolabels-utf.sty
 Package: kolabels-utf 2015/03/20 v1.5 UTF-8 Hangul item labels
-)))
-Class revtex4-2 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 60.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 60.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 60.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 60.
+))) (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup9
+)
+Class revtex4-2 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 64.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 64.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 64.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 64.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count197
 \l__pdf_internal_box=\box64
-) (/mnt/d/Research/potts/tex/test.aux)
-\openout1 = `test.aux'.
+) (/mnt/d/SNU/Research/potts/tex/article.aux)
+\openout1 = `article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 60.
-LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for LUC/nanummj/m/n on input line 64.
+LaTeX Font Info:    Trying to load font information for LUC+nanummj on input line 64.
  (/usr/share/texlive/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 File: lucnanummj.fd 2013/02/12 v0.1 Nanum Myeongjo font definitions
 )
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    ... okay on input line 64.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count198
@@ -312,125 +315,157 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\openout3 = `testNotes.bib'.
+\openout3 = `articleNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 114.
+LaTeX Font Info:    Trying to load font information for LUC+uhcmj on input line 128.
+ (/usr/share/texlive/texmf-dist/tex/latex/kotex-utf/lucuhcmj.fd
+File: lucuhcmj.fd 2013/09/26 UHC Myeongjo font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 128.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 114.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 128.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 119.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 128.
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 119.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 136.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 290.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [2]
-Underfull \hbox (badness 4819) in paragraph at lines 338--341
-[]\OT1/cmr/m/n/10 Multiline equa-tions are ob-tained by us-ing the
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
+
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 385--396
- \OT1/cmr/m/it/10 a. A few notes on \OT1/cmtt/m/it/10 tag\OT1/cmr/m/it/10 s[] [][]\OT1/cmtt/m/n/10 \tag{#1} []\OT1/cmr/m/n/10 re-quires the
+Underfull \hbox (badness 10000) in paragraph at lines 141--144
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--406
-[]\OT1/cmr/m/n/10 Enclosing dis-play math within
+Underfull \hbox (badness 10000) in paragraph at lines 153--158
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--406
-[][]\OT1/cmtt/m/n/10 \begin{subequations} []\OT1/cmr/m/n/10 and [][]\OT1/cmtt/m/n/10 \end{subequations}
+Underfull \hbox (badness 10000) in paragraph at lines 188--191
+
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 215--220
+
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 417--423
-\OT1/cmr/m/n/10 Giving a [][]\OT1/cmtt/m/n/10 \label{#1} []\OT1/cmr/m/n/10 com-mand di-rectly af-ter the
+Underfull \hbox (badness 1062) in paragraph at lines 248--251
+[]\OT1/cmr/m/n/10 Where $\OML/cmm/m/it/10 y[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 y[]$ \OT1/cmr/m/n/10 are the ther-mal and mag-netic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--251
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 303--306
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--387
+
+ []
+
+<../fig/Binder Cumulant (3-state 2D Potts).jpg, id=30, 2890.8pt x 722.7pt>
+File: ../fig/Binder Cumulant (3-state 2D Potts).jpg Graphic file (type jpg)
+<use ../fig/Binder Cumulant (3-state 2D Potts).jpg>
+Package pdftex.def Info: ../fig/Binder Cumulant (3-state 2D Potts).jpg  used on input line 396.
+(pdftex.def)             Requested size: 510.0pt x 127.49994pt.
+
+Class revtex4-2 Warning: Float cannot be placed.
+
+<../fig/Alpha, Specific Heat (3-state 2D Potts).jpg, id=31, 2890.8pt x 867.24pt>
+File: ../fig/Alpha, Specific Heat (3-state 2D Potts).jpg Graphic file (type jpg)
+<use ../fig/Alpha, Specific Heat (3-state 2D Potts).jpg>
+Package pdftex.def Info: ../fig/Alpha, Specific Heat (3-state 2D Potts).jpg  used on input line 402.
+(pdftex.def)             Requested size: 510.0pt x 152.99994pt.
+
+Class revtex4-2 Warning: Float cannot be placed.
+
+<../fig/Beta, Order Parameter (3-state 2D Potts).jpg, id=32, 2168.1pt x 722.7pt>
+File: ../fig/Beta, Order Parameter (3-state 2D Potts).jpg Graphic file (type jpg)
+<use ../fig/Beta, Order Parameter (3-state 2D Potts).jpg>
+Package pdftex.def Info: ../fig/Beta, Order Parameter (3-state 2D Potts).jpg  used on input line 408.
+(pdftex.def)             Requested size: 408.00156pt x 135.99112pt.
+
+Class revtex4-2 Warning: Float cannot be placed.
+
+<../fig/Gamma, Susceptibility (3-state 2D Potts).jpg, id=33, 2890.8pt x 867.24pt>
+File: ../fig/Gamma, Susceptibility (3-state 2D Potts).jpg Graphic file (type jpg)
+<use ../fig/Gamma, Susceptibility (3-state 2D Potts).jpg>
+Package pdftex.def Info: ../fig/Gamma, Susceptibility (3-state 2D Potts).jpg  used on input line 414.
+(pdftex.def)             Requested size: 510.0pt x 152.99994pt.
+
+Class revtex4-2 Warning: Float cannot be placed.
+
+<../fig/Delta, Order Parameter (3-state 2D Potts).jpg, id=34, 2168.1pt x 722.7pt>
+File: ../fig/Delta, Order Parameter (3-state 2D Potts).jpg Graphic file (type jpg)
+<use ../fig/Delta, Order Parameter (3-state 2D Potts).jpg>
+Package pdftex.def Info: ../fig/Delta, Order Parameter (3-state 2D Potts).jpg  used on input line 420.
+(pdftex.def)             Requested size: 408.00156pt x 135.99112pt.
+
+Class revtex4-2 Warning: Float cannot be placed.
+
+<../fig/Finite Size Scaling (3-state 2D Potts).jpg, id=35, 3613.5pt x 722.7pt>
+File: ../fig/Finite Size Scaling (3-state 2D Potts).jpg Graphic file (type jpg)
+<use ../fig/Finite Size Scaling (3-state 2D Potts).jpg>
+Package pdftex.def Info: ../fig/Finite Size Scaling (3-state 2D Potts).jpg  used on input line 426.
+(pdftex.def)             Requested size: 510.0pt x 101.99333pt.
+
+Class revtex4-2 Warning: Float cannot be placed.
+
+<../fig/Correlation Length (3-state 2D Potts).jpg, id=36, 2890.8pt x 867.24pt>
+File: ../fig/Correlation Length (3-state 2D Potts).jpg Graphic file (type jpg)
+<use ../fig/Correlation Length (3-state 2D Potts).jpg>
+Package pdftex.def Info: ../fig/Correlation Length (3-state 2D Potts).jpg  used on input line 432.
+(pdftex.def)             Requested size: 510.0pt x 152.99994pt.
+
+Class revtex4-2 Warning: Float cannot be placed.
+
+<../fig/Correlation Function (3-state 2D Critical Potts).jpg, id=37, 1084.05pt x 722.7pt>
+File: ../fig/Correlation Function (3-state 2D Critical Potts).jpg Graphic file (type jpg)
+<use ../fig/Correlation Function (3-state 2D Critical Potts).jpg>
+Package pdftex.def Info: ../fig/Correlation Function (3-state 2D Critical Potts).jpg  used on input line 439.
+(pdftex.def)             Requested size: 255.0pt x 169.99992pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 438--440
+ [][] 
  []
 
 [3]
-<../fig/Energy (3-state 2D Potts).jpg, id=40, 1084.05pt x 650.43pt>
-File: ../fig/Energy (3-state 2D Potts).jpg Graphic file (type jpg)
-<use ../fig/Energy (3-state 2D Potts).jpg>
-Package pdftex.def Info: ../fig/Energy (3-state 2D Potts).jpg  used on input line 488.
-(pdftex.def)             Requested size: 255.0pt x 152.99994pt.
 
-Overfull \hbox (9.0pt too wide) in paragraph at lines 488--489
- [][] 
- []
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 444.
 
-<../fig/Alpha, Specific Heat (3-state 2D Potts).jpg, id=41, 2529.45pt x 722.7pt>
-File: ../fig/Alpha, Specific Heat (3-state 2D Potts).jpg Graphic file (type jpg)
-<use ../fig/Alpha, Specific Heat (3-state 2D Potts).jpg>
-Package pdftex.def Info: ../fig/Alpha, Specific Heat (3-state 2D Potts).jpg  used on input line 505.
-(pdftex.def)             Requested size: 255.0pt x 72.84766pt.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 514.
-[4 <../fig/Energy (3-state 2D Potts).jpg>]
-<../fig/Beta, Order Parameter (3-state 2D Potts).jpg, id=47, 1806.75pt x 722.7pt>
-File: ../fig/Beta, Order Parameter (3-state 2D Potts).jpg Graphic file (type jpg)
-<use ../fig/Beta, Order Parameter (3-state 2D Potts).jpg>
-Package pdftex.def Info: ../fig/Beta, Order Parameter (3-state 2D Potts).jpg  used on input line 664.
-(pdftex.def)             Requested size: 255.0pt x 101.99333pt.
-<../fig/Delta, Order Parameter (3-state 2D Potts).jpg, id=48, 1806.75pt x 722.7pt>
-File: ../fig/Delta, Order Parameter (3-state 2D Potts).jpg Graphic file (type jpg)
-<use ../fig/Delta, Order Parameter (3-state 2D Potts).jpg>
-Package pdftex.def Info: ../fig/Delta, Order Parameter (3-state 2D Potts).jpg  used on input line 666.
-(pdftex.def)             Requested size: 255.0pt x 101.99333pt.
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 664--668
- [][] 
- []
-
-
-Overfull \hbox (9.0pt too wide) in paragraph at lines 664--668
- [] 
- []
-
-
-Underfull \hbox (badness 7595) in paragraph at lines 659--680
-[]\OT1/cmr/m/n/10 Video 1[] il-lus-trates sev-eral fea-tures new with
- []
-
-[5 <../fig/Alpha, Specific Heat (3-state 2D Potts).jpg>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 685.
-
-(/mnt/d/Research/potts/tex/test.bbl [6 <../fig/Beta, Order Parameter (3-state 2D Potts).jpg> <../fig/Delta, Order Parameter (3-state 2D Potts).jpg>]
-Underfull \hbox (badness 3417) in paragraph at lines 72--75
- []\OT1/cmr/m/n/9 S. R. Kawa and S.-J. Lin.  \OT1/cmr/m/it/9 J. Geo-phys. Res.\OT1/cmr/m/n/9 ,
- []
-
-
-Underfull \hbox (badness 1383) in paragraph at lines 113--118
- \OT1/cmr/m/n/9 Stan-ford Uni-ver-sity, En-glish De-part-ment, June-Aug.
- []
-
-) [7] (/mnt/d/Research/potts/tex/test.aux) ) 
+(/mnt/d/SNU/Research/potts/tex/article.bbl) [4] [5 <../fig/Binder Cumulant (3-state 2D Potts).jpg> <../fig/Alpha, Specific Heat (3-state 2D Potts).jpg> <../fig/Beta, Order Parameter (3-state 2D Potts).jpg>] [6 <../fig/Gamma, Susceptibility (3-state 2D Potts).jpg> <../fig/Delta, Order Parameter (3-state 2D Potts).jpg> <../fig/Finite Size Scaling (3-state 2D Potts).jpg> <../fig/Correlation Length (3-state 2D Potts).jpg>] [7 <../fig/Correlation Function (3-state 2D Critical Potts).jpg>] (/mnt/d/SNU/Research/potts/tex/article.aux) ) 
 Here is how much of TeX's memory you used:
- 5056 strings out of 481239
- 67760 string characters out of 5920376
- 357027 words of memory out of 5000000
- 20218 multiletter control sequences out of 15000+600000
- 550162 words of font info for 91 fonts, out of 8000000 for 9000
+ 4992 strings out of 481239
+ 67063 string characters out of 5920376
+ 336551 words of memory out of 5000000
+ 20109 multiletter control sequences out of 15000+600000
+ 564172 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,15n,35p,588b,435s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb>
-Output written on /mnt/d/Research/potts/tex/test.pdf (7 pages, 1056154 bytes).
+ 38i,12n,35p,333b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb></usr/share/texlive/texmf-dist/fonts/type1/uhc/umj/umj24.pfb></usr/share/texlive/texmf-dist/fonts/type1/uhc/umj/umj26.pfb></usr/share/texlive/texmf-dist/fonts/type1/uhc/umj/umj34.pfb>
+Output written on /mnt/d/SNU/Research/potts/tex/article.pdf (7 pages, 1762677 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
+ 132 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
