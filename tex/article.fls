@@ -222,18 +222,26 @@ INPUT ../fig/Correlation Length (3-state 2D Potts).jpg
 INPUT /mnt/d/SNU/Research/potts/tex/../fig/Correlation Function (3-state 2D Critical Potts).jpg
 INPUT ../fig/Correlation Function (3-state 2D Critical Potts).jpg
 INPUT ../fig/Correlation Function (3-state 2D Critical Potts).jpg
+INPUT /mnt/d/SNU/Research/potts/tex/../fig/triangular lattice.JPG
+INPUT ../fig/triangular lattice.JPG
+INPUT ../fig/triangular lattice.JPG
+INPUT /mnt/d/SNU/Research/potts/tex/../fig/effective interblock interaction.JPG
+INPUT ../fig/effective interblock interaction.JPG
+INPUT ../fig/effective interblock interaction.JPG
 INPUT /mnt/d/SNU/Research/potts/tex/article.bbl
 INPUT /mnt/d/SNU/Research/potts/tex/article.bbl
 INPUT /mnt/d/SNU/Research/potts/tex/article.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb

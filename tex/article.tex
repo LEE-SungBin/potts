@@ -225,7 +225,7 @@ function is invariant.
 \mathcal{Z}(\mathcal{H}) = \sum_{s'}\sum_{s}e^{-\mathcal{H}} = \sum_{s'}
 e^{-\mathcal{H}'} = \mathcal{Z}'\left(\mathcal{H}'\right) \label{parequal}\\
 \text{where } e^{-\mathcal{H}'} = \sum_{s} e^{-\mathcal{H}} \leftrightarrow 
-\mathcal{H}' = - \ln \left[\sum_{s} e^{-\mathcal{H}}\right]
+\mathcal{H}' = - \ln \left[\sum_{s} e^{-\mathcal{H}}\right] \label{eqn:newHam}
 \end{gather}
 
 
@@ -442,7 +442,171 @@ fixed point at Size = 8, 16, 32, and 64. $\eta = 4/15 \text{ since } d = 2$}
 \end{figure}
 
 \section{\label{sec:rsrg}Theoretical Method 1: \\ Real-Space Renormalization Group}
+In this section, we calculate the coupling exponents of 3-state Potts model in 2 dimension 
+by utilizing Block-Spin Transformation technique, a well-known analytic realization in 
+Real-space Renormalization Group. To avoid further complication, we will be applying this 
+technique to the Potts model on triangular lattice. \\
 
+As sdisplayed in Fig.~\ref{fig:tri}, we first group sites on the triangular lattice into 
+triples on triangles and then coarse grain the system b choosing a representative single 
+spin value for each of the triples forming a new triangular lattice with scale factor 
+$b=\sqrt 3$. \\
+
+\begin{figure}[b]
+\includegraphics[width=0.4\textwidth]{../fig/triangular lattice.JPG}
+\caption{\label{fig:tri} Three spins on a shaded triangle $\sigma_{1}, \sigma_{2}, 
+\text{ and } \sigma_{3}$ are grouped into a scaled block spin $S$ with value determined
+by the majority rule.}
+\end{figure}
+
+For newly denoted block spin $S$ grouped from $\sigma_{1}, \sigma_{2}, \text{ and } 
+\sigma_{3}$, the value are assigned in accordance to the majority rule. For $\sigma$
+spin configuration $\sigma_{I} = \{\sigma_{1}\sigma_{2}\sigma_{3}\}$ in block lattice $I$, 
+the block spin $S_{I}$ that forms the coarsed-grain system is transformed as
+
+\begin{gather}
+\{000, 001, 010, 100, 002, 020, 200, (012) \} \rightarrow S_{I}=0 \\
+\{111, 110, 101, 011, 112, 121, 211, (012) \} \rightarrow S_{I}=1 \\
+\{222, 220, 202, 022, 221, 212, 122, (012) \} \rightarrow S_{I}=2
+\end{gather}
+
+where for configuration $\{012\}$, the block spin is assigned randomly with equal 
+probability. \\
+
+The block-spin $S$ forms a new Hamiltonian $H'$ scaled from the original Hamiltonian $H$.
+
+\begin{gather}
+H = -K\sum_{\left<i,j\right>}\delta(\sigma_{i}, \sigma_{j}) -h\sum_{i}\delta(\sigma_{i},0) \\
+H'= -K'\sum_{\left<I,J\right>}\delta(S_{I}, S_{J}) -h'\sum_{I}\delta(S_{I},0) \label{eqn:Hpri}
+\end{gather}
+
+The coupling exponent $y_t \text{ and } y_h$ is given as a derivative betweem original and 
+scaled coupling parameter $K, h$ and $K'(K,h), \text{ } h'(K,h)$.
+
+\begin{eqnarray}
+y_{t} = \frac{\partial K'}{\partial K}\bigg|_{K_c,h_c} \text{ and } 
+y_{h} = \frac{\partial h'}{\partial h}\bigg|_{K_c,h_c} \label{eqn:exp} \\
+\end{eqnarray}
+
+Therefore, our goal is to calculate the scaled coupling parameter $K' \text{ and } h'$ from
+the following relation which is a combination of Eq.~(\ref{eqn:newHam}) and~(\ref{eqn:Hpri}).
+
+\begin{gather}
+\sum_{\{S\}}e^{K'\sum_{\left<I,J\right>}\delta(S_{I}, S_{J}) +h'\sum_{I}\delta(S_{I},0)} = 
+\sum_{\{\sigma\}}e^{-H} \\
+H' = -\ln\left[\sum_{\{\sigma^{S}\}} e^{K\sum_{\left<i,j\right>}\delta(\sigma_{i}, \sigma_{j}) 
++h\sum_{i}\delta(\sigma_{i},0)}\right] \label{eqn:block-spin}
+\end{gather}
+
+where the term $\{\sigma^{S}\}$ represents the set of spin configuration $\sigma$ when 
+$S$ is given. \\
+
+Eq.~(\ref{eqn:block-spin}) can be elaborated as follows:
+
+\begin{widetext}
+\begin{gather}
+\sum_{\{\sigma^{S}\}} e^{K\sum_{\left<i,j\right>}\delta(\sigma_{i}, \sigma_{j}) 
++h\sum_{i}\delta(\sigma_{i},0)}
+= \sum_{\{\sigma^{S}\}} e^{K\sum_{\left<i,j\in I\right>}\delta(\sigma_{i}, \sigma_{j}) 
++h\sum_{i}\delta(\sigma_{i},0) + K\sum_{\left<i\in I, j \in J\right>}\delta(\sigma_{i}, 
+\sigma_{j})} \\
+= \sum_{\{\sigma^{S}\}} e^{K\sum_{\left<i,j\in I\right>}\delta(\sigma_{i}, \sigma_{j}) 
++h\sum_{i}\delta(\sigma_{i},0)} \times \frac{\sum_{\{\sigma^{S}\}} e^{K\sum_{\left<i,j\in 
+I\right>}\delta(\sigma_{i}, \sigma_{j}) +h\sum_{i}\delta(\sigma_{i},0)} 
+\times e^{K\sum_{\left<i\in I, j \in J\right>}\delta(\sigma_{i}, \sigma_{j})}}
+{\sum_{\{\sigma^{S}\}} e^{K\sum_{\left<i,j\in I\right>}\delta(\sigma_{i}, \sigma_{j}) 
++h\sum_{i}\delta(\sigma_{i},0)}} \\
+= \sum_{\{\sigma^{S}\}} e^{-H_{0}} \times \frac{\sum_{\{\sigma^{S}\}} e^{-H_{0}} \times 
+e^{-V}}{\sum_{\{\sigma^{S}\}} e^{-H_{0}}}
+= \prod_{I} Z_{\text{block}} \times \left<e^{-V}\right>_{0}
+= \prod_{I} Z_{\text{block}} \times \left<e^{K\sum_{\left<i\in I, j \in J\right>}
+\delta(\sigma_{i}, \sigma_{j})}\right>_{0}
+\end{gather}
+
+\begin{gather}
+K'\sum_{\left<I,J\right>}\delta(S_{I}, S_{J}) + h'\sum_{I}\delta(S_{I},0) 
+= \sum_{I} \ln\left[Z_{\text{block}}\right] + \ln\left[\left<e^{K\sum_{\left<i \in I, 
+j \in J\right>} \delta(\sigma_{i}, \sigma_{j})}\right>_{0}\right] \\
+\approx \sum_{I} \ln\left[Z_{\text{block}}\right] + \left<K\sum_{\left<i \in I, 
+j \in J\right>} \delta(\sigma_{i}, \sigma_{j})\right>_{0} + \dotsb
+\approx \sum_{I} \ln\left[Z_{\text{block}}\right] + K \sum_{\left<I,J\right>} 
+\left<\delta(\sigma_{I1}, \sigma_{J2}) + \delta(\sigma_{I3}, \sigma_{J2})\right>_{0} \\
+\approx \sum_{I} \ln\left[Z_{\text{block}}\right] + 2K \sum_{\left<I,J\right>} 
+\left<\delta(\sigma_{I1},\sigma_{J2})\right>_{0} \\
+\approx \sum_{I} \ln\left[Z_{\text{block}}\right] + 2K \sum_{\left<I,J\right>} \big[
+\left<\delta(\sigma_{I1},0)\right>_{0}\left<\delta(\sigma_{J2},0)\right>_{0} + 
+\left<\delta(\sigma_{I1},1)\right>_{0}\left<\delta(\sigma_{J2},1)\right>_{0} + 
+\left<\delta(\sigma_{I1},2)\right>_{0}\left<\delta(\sigma_{J2},2)\right>_{0}\big]
+\end{gather}
+\end{widetext}
+
+While $\left<\dotsb\right>_{0}$ is the expectation value with respect to the weight of 
+internal block Hamiltonian $H_{0}$. Fig~\ref{fig:intra} shows the inter-block relation 
+between block indices $I=1 \text{ and } J=2$, note that in triangular lattice, 
+there are 6 nearest-neighbor indices after block-spin transformation. \\
+
+\begin{figure}[b]
+\includegraphics[width=0.4\textwidth]{../fig/effective interblock interaction.JPG}
+\caption{\label{fig:intra} Inter-block relation between block indices $I=1 \text{ and } J=2$.
+It is worth mentioning that in triangular lattice, there are 6 nearest-neighbor indices 
+after block-spin transformation.}
+\end{figure}
+
+If we denote $Z_{\text{block}} = \exp[C_{1} + D \delta(S_{I},0)]$ and 
+$\left<\delta(\sigma_{I1},\sigma_{J2})\right>_{0} = A\delta(S_{I},S_{J}) + 
+B\delta(S_{I},0) + B\delta(S_{J},0) + C_{2}$, the renormalization group equation is 
+written as
+
+\begin{gather}
+K' = 2KA(K,h) \label{eqn:rgeq1}\\
+h' = D(K,h) + 6 \times 2KB(K,h) \label{eqn:rgeq2}
+\end{gather}
+
+Explicit calculations through majority rule and rescaling in triangular lattice
+reveals the following result.
+
+\begin{align}
+A(K,h) = \left(\frac{e^{3K}+2e^{K+h}+e^{K}}{e^{3K}+3e^{K+h}+3e^{K}+2e^{h}}\right)^{2}
+\end{align}
+
+\begin{widetext}
+\begin{multline}
+B(K,h) = \frac{1}{2} \times \Bigg[
+\frac{\left(e^{3K+3h}+4e^{K+2h}+2/3e^{h}\right)^2 + 2\left(e^{K+2h}+2/3e^{h}\right)^2}
+{\left(e^{3K+3h}+6e^{K+2h}+2e^{h}\right)^2}\\ 
+- \frac{\left(e^{3K}+2e^{K+h}+2e^{K}+2/3e^{h}\right)^2+\left(e^{K+h}+2/3e^{h}\right)^2+
+\left(e^{K}+2/3e^{h}\right)^2}
+{\left(e^{3K}+3e^{K+h}+3e^{K}+2e^{h}\right)^2} \Bigg]
+\end{multline}
+\end{widetext}
+
+% \begin{widetext}
+% \begin{multline}
+% p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\ 
+% - 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
+% \end{multline}
+% \end{widetext}
+
+\begin{align}
+D(K,h) = \ln\left[\frac{e^{3K+3h}+6e^{K+2h}+2e^{h}}{e^{3K}+3e^{K+h}+3e^{K}+2e^{h}}\right]
+\end{align}
+
+One can determine the critical fixed point with infinite correlation length by applying
+$K=K'=K_c \text{ and }h=h'=h_c$ in Eq.~(\ref{eqn:rgeq1}) and~(\ref{eqn:rgeq2}).
+
+\begin{eqnarray}
+\left(K_c,h_c\right) = (0.911, 0) \label{eqn:cfp}
+\end{eqnarray}
+
+As a result, the coupling parameter for temperature and external magnetic field is
+
+\begin{gather}
+y_{t} = \frac{\partial K'}{\partial K} \bigg|_{(0.911,\text{ }0)} = 1.102 \\
+y_{h} = \frac{\partial h'}{\partial h} \bigg|_{(0.911,\text{ }0)} = 2
+\end{gather}
+
+which is faily close to the exact value of $(6/5, \text{ } 28/15)$ for 3-state Potts model 
+in 2 dimension.
 
 \section{\label{sec:mcrg}Numerical Method 2: \\ Monte Carlo Renormalization Group}
 TBA
@@ -504,7 +668,7 @@ Heisenberg & 3 & 1.41 & 2.48 \\
 
 \begin{acknowledgments}
 The code that generates data for Finite Size Scaling in Section~\ref{sec:fss} in this paper
-is available at .
+is available at https://github.com/LEE-SungBin/potts.git.
 \end{acknowledgments}
 
 \appendix
