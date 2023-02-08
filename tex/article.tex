@@ -46,6 +46,7 @@
 \usepackage{kotex} % Korean
 \usepackage{amsmath}
 \usepackage{mathrsfs}
+\usepackage{physics}
 % \usepackage{fontspec}
 % \usepackage{unicode-math}
 
@@ -405,7 +406,7 @@ and 64. $\alpha = 1/3$}
 \end{figure*}
 
 \begin{figure*}[b]
-\includegraphics[width=0.8\textwidth]{../fig/Beta, Order Parameter (3-state 2D Potts).jpg}
+\includegraphics[width=0.9\textwidth]{../fig/Beta, Order Parameter (3-state 2D Potts).jpg}
 \caption{\label{fig:beta} Order Parameter $m$ of the system with no external field 
 at Size = 8, 16, 32, and 64. $\beta = 1/9$}
 \end{figure*}
@@ -445,7 +446,8 @@ fixed point at Size = 8, 16, 32, and 64. $\eta = 4/15 \text{ since } d = 2$}
 In this section, we calculate the coupling exponents of 3-state Potts model in 2 dimension 
 by utilizing Block-Spin Transformation technique, a well-known analytic realization in 
 Real-space Renormalization Group. To avoid further complication, we will be applying this 
-technique to the Potts model on triangular lattice. \\
+technique to the Potts model on triangular lattice since the topological aspect of the
+lattice, unlike the dimension, has no affect on the value of coupling exponents. \\
 
 As sdisplayed in Fig.~\ref{fig:tri}, we first group sites on the triangular lattice into 
 triples on triangles and then coarse grain the system b choosing a representative single 
@@ -484,8 +486,8 @@ The coupling exponent $y_t \text{ and } y_h$ is given as a derivative betweem or
 scaled coupling parameter $K, h$ and $K'(K,h), \text{ } h'(K,h)$.
 
 \begin{eqnarray}
-y_{t} = \frac{\partial K'}{\partial K}\bigg|_{K_c,h_c} \text{ and } 
-y_{h} = \frac{\partial h'}{\partial h}\bigg|_{K_c,h_c} \label{eqn:exp} \\
+b^{y_{t}} = \frac{\partial K'}{\partial K}\bigg|_{K_c,h_c} \text{ and } 
+b^{y_{h}} = \frac{\partial h'}{\partial h}\bigg|_{K_c,h_c} \label{eqn:exp}
 \end{eqnarray}
 
 Therefore, our goal is to calculate the scaled coupling parameter $K' \text{ and } h'$ from
@@ -501,7 +503,8 @@ H' = -\ln\left[\sum_{\{\sigma^{S}\}} e^{K\sum_{\left<i,j\right>}\delta(\sigma_{i
 where the term $\{\sigma^{S}\}$ represents the set of spin configuration $\sigma$ when 
 $S$ is given. \\
 
-Eq.~(\ref{eqn:block-spin}) can be elaborated as follows:
+The RHS of Eq.~(\ref{eqn:block-spin}) can be elaborated as follows to obtain a useful version of the 
+renormalization group equation that describes the flow.
 
 \begin{widetext}
 \begin{gather}
@@ -536,7 +539,7 @@ j \in J\right>} \delta(\sigma_{i}, \sigma_{j})\right>_{0} + \dotsb
 \approx \sum_{I} \ln\left[Z_{\text{block}}\right] + 2K \sum_{\left<I,J\right>} \big[
 \left<\delta(\sigma_{I1},0)\right>_{0}\left<\delta(\sigma_{J2},0)\right>_{0} + 
 \left<\delta(\sigma_{I1},1)\right>_{0}\left<\delta(\sigma_{J2},1)\right>_{0} + 
-\left<\delta(\sigma_{I1},2)\right>_{0}\left<\delta(\sigma_{J2},2)\right>_{0}\big]
+\left<\delta(\sigma_{I1},2)\right>_{0}\left<\delta(\sigma_{J2},2)\right>_{0}\big] 
 \end{gather}
 \end{widetext}
 
@@ -601,17 +604,80 @@ $K=K'=K_c \text{ and }h=h'=h_c$ in Eq.~(\ref{eqn:rgeq1}) and~(\ref{eqn:rgeq2}).
 As a result, the coupling parameter for temperature and external magnetic field is
 
 \begin{gather}
-y_{t} = \frac{\partial K'}{\partial K} \bigg|_{(0.911,\text{ }0)} = 1.102 \\
-y_{h} = \frac{\partial h'}{\partial h} \bigg|_{(0.911,\text{ }0)} = 2
+y_{t} = \ln\left[\frac{\partial K'}{\partial K} \bigg|_{(0.911,\text{ }0)}\right] / \ln\sqrt3 = 1.102 \\
+y_{h} = \ln\left[\frac{\partial h'}{\partial h} \bigg|_{(0.911,\text{ }0)}\right] / \ln\sqrt3 = 2(?)
 \end{gather}
 
-which is faily close to the exact value of $(6/5, \text{ } 28/15)$ for 3-state Potts model 
+which is pretty close to the exact value of $(6/5, \text{ } 28/15)$ for 3-state Potts model 
 in 2 dimension.
 
 \section{\label{sec:mcrg}Numerical Method 2: \\ Monte Carlo Renormalization Group}
+Monte Carlo Renormalization Group (MCRG) is a numerical method used to study the 
+behavior of statistical systems in physics and related fields. It is based on the 
+idea of the Renormalization Group, but instead of analytically solving flow equations, 
+MCRG uses computer simulations to generate a sequence of approximate solutions for 
+the system under consideration. \\
+
+In MCRG, the system is treated as a set of discrete variables, and the values of 
+these variables are updated using a random process based on the Metropolis algorithm. 
+The updates are performed repeatedly, and the resulting configurations are used to 
+calculate various properties of the system. Over time, the RG transformation is carried 
+out by changing the scale at which the system is studied, leading to the creation of a 
+block-spin representation that summarizes the behavior of the system at different scales.\\
+
+MCRG is commonly used in computational physics and is considered a powerful tool for 
+studying complex systems, especially those that exhibit phase transitions or 
+critical phenomena. \\
+
 TBA
 
 \section{\label{sec:cft}Theoretical Method 2: \\ Conformal Field Theory}
+Conformal field theory (CFT) is a type of field theory that is characterized by the 
+presence of conformal symmetry, which is a set of transformations that preserve angles 
+and ratios of distances in a two-dimensional space. Conformal symmetries are important 
+in many areas of physics and mathematics, including string theory, condensed matter 
+physics, and statistical mechanics. \\
+
+The Virasoro algebra is a Lie algebra that plays a central role in conformal field theory. 
+It is a symmetry algebra of the conformal group, which is the group of transformations that 
+preserve conformal symmetry. The Virasoro algebra is generated by a set of 
+infinite-dimensional operators, known as Virasoro generators, which encode the symmetries 
+of the theory and describe the behavior of the theory under conformal transformations. \\
+
+The Virasoro algebra is used to classify and study the symmetries of conformal 
+field theories, and it is an important tool in the study of critical phenomena, 
+such as phase transitions. In particular, it provides a way to study the behavior of 
+two-dimensional field theories under scale transformations, which are important in 
+understanding the critical behavior of systems near a phase transition. \\
+
+The representation of Virasoro Algebra describes the basis of conformal field theory in 2 
+dimension. For coprime integers $p, q \geq 2 \text{ and } r=1\sim q-1, s=1\sim p-1$,
+
+\begin{gather}
+c_{p,q} = 1-\frac{6(p-q)^2}{pq} \\
+h_{r,s} = \frac{(pr-qs)^2-(p-q)^2}{4pq}
+\end{gather}
+
+where $c_{p,q} \text{ and } h_{r,s}$ is a central charge and conformal weight of the system, 
+respectively. It is worth noting that the total number of primary fields is $(p-1)(q-1)/2$.\\
+
+The representation is unitary if and only if $|p-q|=1$, e.g. $p=m+1 \text{ and }q = m$.
+
+\begin{gather}
+c=1-\frac{6}{m(m+1)} \text{ for m=3,4,5} \dotsb \\
+h_{r,s} = \frac{\left[(m+1)r-ms\right]^2-1}{4m(m+1)}
+\end{gather}
+
+The critical ising model in 2 dimension is represented by $m=3$ while the conformal symmetry 
+of critical 3-state Potts model in 2 dimension is described by the unitary representation 
+of Virasoro Algebra with $m=5$. One can calculate the temperature and magnetic coupling 
+exponents from their respective conformal weights associated with the primary fields.
+
+\begin{gather}
+y_{t} = 2 - 2h_{2,1} = 2 - \frac{4}{5} = \frac{6}{5} \\
+y_{h} = 2 - 2h_{2,3} = 2 - \frac{2}{15} = \frac{28}{15}
+\end{gather}
+
 TBA
 
 \section{Conclusions}
@@ -619,11 +685,134 @@ Conclusion.
 
 % \paragraph{Syntax}
 
+\begin{acknowledgments}
+The code that generates data for Finite Size Scaling in Section~\ref{sec:fss} in this paper
+is available at https://github.com/LEE-SungBin/potts.git.
+\end{acknowledgments}
+
+\appendix
+
+\section{\label{appx:fluc}Fluctuation-dissipation theorem}
+Consider an arbitrary system whose Hamiltonian $H(0)$ is modified because of the presence of 
+an external inhomogeneous field $B(r)$ as
+
+\begin{eqnarray}
+H = H_{0} -\int dr O(r)B(r)
+\end{eqnarray}
+
+where $O(r)$ is the system variable that linearly couples to the external field. The free 
+energy $F = -\beta^{-1} \ln Z$ in terms of the partition function
+
+\begin{eqnarray}
+Z = \Tr\left[\exp\left(-\beta H_{0} + \beta \int dr O(r)B(r)\right)\right]
+\end{eqnarray}
+
+The generalized isothermal susceptibility is defined as follows:
+
+\begin{eqnarray}
+\chi(r,r') := -\frac{\partial^2 F}{\partial B(r) \partial B(r')}
+\end{eqnarray}
+
+as the second-order functional derivative of the free energy with the result
+
+\begin{multline}
+\chi(r,r') = \beta^{-1} \bigg[\frac{1}{Z} \frac{\partial^2 Z}{\partial B(r) \partial B(r')} \\
+-\frac{1}{Z}\frac{\partial Z}{\partial B(r)} \frac{1}{Z} \frac{\partial Z}{\partial B(r')} \bigg]
+\end{multline}
+
+Therefore, the generalized isothermal susceptibility is proportional to the correlation 
+function between two corresponding points.
+
+\begin{multline}
+\chi(r,r') = \beta G(r,r') \\
+= \beta \left[\left<O(r)O(r')\right>-\left<O(r)\right>\left<O(r')\right>\right]
+\end{multline}
+
+If the system is translation invariant, we can sum over the both hand side to get the 
+fluctuation-dissipation theorem.
+
+\begin{eqnarray}
+\chi = \int dr \chi(r) = \beta \int dr G(r)
+\end{eqnarray}
+
+\section{\label{appx:rsrg-ising}Real-Space Renormalization Group for Ising Model on 
+two dimensional square lattice}
+Real-space Renormalization Group for Ising Model on two dimensional square lattice is more 
+or less similiar to that for the 3-state Potts model. The block-spin transformation satisfies
+the following majority principle for spin $\sigma = \pm 1$.
+
+\begin{gather}
+\{++++,\overline{+++-},\widehat{++--},\widehat{+-+-}\} \rightarrow S_{I} = + \\
+\{----,\overline{---+},\widehat{--++},\widehat{-+-+}\} \rightarrow S_{I} = -
+\end{gather}
+
+The renormalization group equation for ising model is given as
+
+\begin{widetext}
+\begin{gather}
+K'\sum_{\left<I,J\right>}S_{I}S_{J}+h'\sum_{I}S_{I} \approx 
+\sum_{I} \ln\left[Z_{\text{block}}\right] + 2K \sum_{\left<I,J\right>}
+\left<\sigma_{I4}\right>_{0}\left<\sigma_{J1}\right>_{0}
+\end{gather}
+\end{widetext}
+
+If we set $Z_{\text{block}} = \exp[C+DS_{I}]$ and $\left<\sigma_{I4}\right>_{0} = A + BS_{I}$,
+The renormalization equation is simplified as follows:
+
+\begin{gather}
+K' = 2KB(K,h)^{2} \\
+h' = D(K,h) + 4 \times 2KA(K,h)B(K,h)
+\end{gather}
+
+After some calculation, it is straight forward to prove
+
+\begin{multline}
+A(K,h) = \frac{1}{2} \bigg[\frac{e^{4K+4h}+2e^{2h}}{e^{4K+4h}+4e^{2h}+2+e^{-4K}} \\
+- \frac{e^{4K-4h}+2e^{-2h}}{e^{4K-4h}+4e^{-2h}+2+e^{-4K}}\bigg]
+\end{multline}
+\begin{multline}
+B(K,h) = \frac{1}{2} \bigg[\frac{e^{4K+4h}+2e^{2h}}{e^{4K+4h}+4e^{2h}+2+e^{-4K}} \\
++ \frac{e^{4K-4h}+2e^{-2h}}{e^{4K-4h}+4e^{-2h}+2+e^{-4K}}\bigg]
+\end{multline}
+\begin{gather}
+D(K,h) = \ln\left[\frac{e^{4K+4h}+4e^{2h}+2+e^{-4K}}{e^{4K-4h}+4e^{-2h}+2+e^{-4K}}\right]
+\end{gather}
+
+Therefore, we can theoretically derive the critical fixed point and temperature and magnetix
+exponent of the ising model in 2 dimension.
+
+\begin{gather}
+\left(K_{c}, h_{c}\right) = (0.5, 0)
+\end{gather}
+
+Note that the exact critical temperature of ising model in 2 dimensional square lattice is
+$K_{c} = \frac{\ln\left[1+\sqrt2\right]}{2} = 0.441$.
+
+\begin{gather}
+y_{t} = \ln\left[\frac{\partial K'}{\partial K} \bigg|_{(0.5,0)}\right] / \ln2 =  \\
+y_{h} = \ln\left[\frac{\partial h'}{\partial h} \bigg|_{(0.5,0)}\right] / \ln2 = 
+\end{gather}
+
+which is pretty close to the exact value of $(1, \text{ } 15/8)$ for Ising model 
+in 2 dimension.\\
+
+\section{\label{appx:universal}Universality Class}
+Universality Class is a set of physical system that shares an identical scale invariant 
+limit under the process of renormalization group flow. While the model may seem to evolve 
+in time differently in most situations, their behavior will converge to a certain 
+classification as they reach the scale limit. \\
+
+The most prominent examples of the universality class is the critical exponents of the 
+system which describes the asymptotic phenomena of the model as they approach the phase 
+transition point. Table~\ref{tab:universality} and~\ref{tab:exponent} shows the full list 
+of critical exponents and critical coupling exponents for several well-known physical 
+system that exhibit critical phenomena or phase transitions. \\ 
+
 \begin{table}[b]
 \caption{\label{tab:universality}
-A table with numerous columns that still fits into a single column. 
-Here, several entries share the same footnote. 
-Inspect the \LaTeX\ input for this table to see exactly how it is done.}
+A full list of critical exponents of various physical systems that shows phase transition. 
+Each critical exponents describes the asymptotic behavior of the physical quantities as the 
+system approaches phase transition.}
 \begin{ruledtabular}
 \begin{tabular}{cccccccc}
 Class &$d$ &$\alpha$ &$\beta $&$\gamma $&
@@ -649,9 +838,10 @@ Mean Field &  & 0 & 1/2 & 1
 
 \begin{table}[b]
 \caption{\label{tab:exponent}
-A table with numerous columns that still fits into a single column. 
-Here, several entries share the same footnote. 
-Inspect the \LaTeX\ input for this table to see exactly how it is done.}
+A full list of critical temperature and external field exponents of various physical system 
+that shows phase transition. It is worth noting that every critical exponents which 
+describes the asymptotic behavior of physical system near critical point can be calculated
+from the coupling parameter via scaling relations.}
 \begin{ruledtabular}
 \begin{tabular}{cccccccc}
 Class &$d$ &$y_{t}$ &$y_{h}$\\
@@ -665,24 +855,6 @@ Heisenberg & 3 & 1.41 & 2.48 \\
 \end{tabular}
 \end{ruledtabular}
 \end{table}
-
-\begin{acknowledgments}
-The code that generates data for Finite Size Scaling in Section~\ref{sec:fss} in this paper
-is available at https://github.com/LEE-SungBin/potts.git.
-\end{acknowledgments}
-
-\appendix
-
-\section{\label{appx:fluc}Fluctuation-dissipation theorem}
-Fluctuation-dissipation theorem
-
-\section{\label{appx:rsrg-ising}Real-Space Renormalization Group for Ising Model on 
-two dimensional square lattice}
-Real-space Renormalization Group for Ising Model on two dimensional square lattice
-
-\section{\label{appx:universal}Universality Class}
-Universality Class
-
 
 % The \nocite command causes all entries in a bibliography to be printed out
 % whether or not they are actually referenced in the text. This is appropriate
